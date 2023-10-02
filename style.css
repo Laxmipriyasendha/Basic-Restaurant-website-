@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    top:50px;
+    width: 100%;
+}
+
+.a1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center; 
+  font-size: 1.5em;
+  font-family:sans-serif;
+  color:rgb(247, 247, 247);
+  font-weight:bolder;
+}
+
+.a1 h1{
+    font-weight: bolder;
+}
+
+
+#p1{
+    position: absolute;
+    left: 500px;
+    top: 15px;
+    display: inline-block;
+}
+#p2{
+    width: 450px;
+    padding-left: 15px;
+    height: 30px;
+    border-radius: 50px;
+    border:0.5px solid rgb(0, 0, 0);
+    font-family:'Courgette', cursive;
+    background-color:rgb(241, 241, 241);
+}
+
+select {
+    width: 150px;
+    height: 25px;
+}
+select:focus {
+    min-width: 150px;
+    width: auto;
+}    
+
+#s1{
+    display:inline-block ;
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    height: 50px;
+    width: 100px;
+}
+#c1{
+  position: absolute;
+  left: 1000px;
+  top: 5px;
+  font-family:'Courgette', cursive;
+  font-weight: 200;
+}
+
+
+
+
+  .about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding:10px;
+}
+
+
+.z1{
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.flex-column-form {
+    display: inline-block;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-control{
+    width: 70%;
+    height:30px;
+    margin:5px;
+    font-family: 'Big Shoulders Text', cursive;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 30px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #000000;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    border: 0;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.btn.btn-primary:hover {
+    background-color: #b6b6b6;
+    color: #000000;
+    font-weight: 1000;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 19px 20px;
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-group p {
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.z2{
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+.footers
+{     
+    overflow: auto;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:700;
+}
